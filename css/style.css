@@ -33,3 +33,68 @@ img{
 li{
   list-style: none;
 }
+
+
+/* Header */
+.swiper {
+  width: 480px;
+  height: 320px;
+}
+
+
+
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary_inner{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid #000;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+}
+
+.icon {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  width: 10px;    
+  height: 10px;   
+  border-top: 2px solid #000;   
+  border-right: 2px solid #000;  
+  transform: rotate(135deg);  
+  transition: .5s;
+}
+
+details[open] .icon {
+  transform: rotate(315deg);
+}
+
+.content {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content_inner {
+  padding: 10px;
+}
+
+.accordion details {
+  margin-bottom: 4px;
+}
+
+.accordion details:last-child {
+  margin-bottom: 0;
+}
