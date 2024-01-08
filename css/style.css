@@ -42,6 +42,30 @@ li{
 }
 
 
+/* Page-Top */
+
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .3s;
+  color: #00A6C4;
+  background: #fff;
+  
+/*   デフォルトは非表示 */
+  opacity: 0;
+}
+.pagetop:hover {
+    box-shadow: 0 0 10px #00A6C4;
+}
+
 
 
 summary {
@@ -75,10 +99,10 @@ summary::-webkit-details-marker {
   border-top: 2px solid #000;   
   border-right: 2px solid #000;  
   transform: rotate(135deg);  
-  transition: .5s;
+  transition: .4s ;
 }
 
-details[open] .icon {
+details.is-opened .icon {
   transform: rotate(315deg);
 }
 
