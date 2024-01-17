@@ -152,72 +152,75 @@
         <button id="open" class="variation__btn">取扱い店舗を見る</button>
       </div>
       <section id="modal" class="modal">
-        <button id="close">閉じる</button>
-        <h2>取扱い店舗一覧</h2>
-        <div class="tokyo">
-          <h3>東京</h3>
-          <dl>
-            <dt>店舗名が入ります</dt>
-            <dd>
+        <div class="close-box">
+          <button id="close" class="close"></button>
+        </div>
+        <h2 class="modal__title">取扱い店舗一覧</h2>
+        <div class="area tokyo">
+          <h3 class="area__title">東京</h3>
+          <dl class="area__list">
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>東京都○○○○○○○○○○○</address>
               <a href="#" class="tokyo__link">https://www.aaa.com</a>
             </dd>
-            <dt>店舗名が入ります</dt>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>東京都○○○○○○○○○○○</address>
               <a href="#" class="tokyo__link">https://www.aaa.com</a>
             </dd>
-            <dt>店舗名が入ります</dt>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>東京都○○○○○○○○○○○</address>
               <a href="#" class="tokyo__link">https://www.aaa.com</a>
             </dd>
           </dl>
         </div>
-        <div class="osaka">
-          <h3>大阪</h3>
-          <dl>
-            <dt>店舗名が入ります</dt>
-            <dd>
+        <div class="area osaka">
+          <h3 class="area__title">大阪</h3>
+          <dl class="area__list">
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>大阪府○○○○○○○○○○○</address>
               <a href="#" class="osaka__link">https://www.aaa.com</a>
             </dd>
-            <dt>店舗名が入ります</dt>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>大阪府○○○○○○○○○○○</address>
               <a href="#" class="osaka__link">https://www.aaa.com</a>
             </dd>
           </dl>
         </div>
-        <div class="aichi">
-          <h3>愛知</h3>
-          <dl>
-            <dt>店舗名が入ります</dt>
-            <dd>
+        <div class="area aichi">
+          <h3 class="area__title">愛知</h3>
+          <dl class="area__list">
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>愛知県○○○○○○○○○○○</address>
               <a href="#" class="aichi__link">https://www.aaa.com</a>
             </dd>
-            <dt>店舗名が入ります</dt>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>愛知県○○○○○○○○○○○</address>
               <a href="#" class="aichi__link">https://www.aaa.com</a>
             </dd>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>愛知県○○○○○○○○○○○</address>
               <a href="#" class="aichi__link">https://www.aaa.com</a>
             </dd>
           </dl>
         </div>
-        <div class="fukuoka">
-          <h3>福岡</h3>
-          <dl>
-            <dt>店舗名が入ります</dt>
-            <dd>
+        <div class="area fukuoka">
+          <h3 class="area__title">福岡</h3>
+          <dl class="area__list">
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>福岡県○○○○○○○○○○○</address>
               <a href="#" class="fukuoka__link">https://www.aaa.com</a>
             </dd>
-            <dt>店舗名が入ります</dt>
-            <dd>
+            <dt class="area__term">店舗名が入ります</dt>
+            <dd class="area__description">
               <address>〒999-9999<br>福岡県○○○○○○○○○○○</address>
               <a href="#" class="fukuoka__link">https://www.aaa.com</a>
             </dd>
@@ -229,39 +232,44 @@
     <section class="other">
       <div class="accordion wrapper">
         <div class="accordion__inner">
-          <h2 class="accordin_title">other items</h2>
+          <h2 class="section-title">other items</h2>
+          <h2 class="section-title-ja">あなたにあったアイテムを見つけよう！</h2>
           <details class="js-details">
             <summary class="js-summary">
-              <span class="summary_inner">
-                <div>
+              <span class="summary__inner">
+                <div class="summary__img">
                   <img src="img/items-1-s.png" alt="">
                 </div>
-                <div class="text">
-                  <h3>B. SOAP BATH SET / N001</h3>
-                  <p>商品の簡単な説明テキストが1行はいります。</p>
-                  <p>販売名：販売時の正式名称がはいります</p>
+                <div class="summary__text">
+                  <h3 class="summary__text__title">B. SOAP bath set / N001</h3>
+                  <p class="summary__text__description">商品の簡単な説明テキストが1行はいります。</p>
+                  <p class="summary__text__name">販売名：販売時の正式名称がはいります</p>
                 </div>
                 <span class="icon"></span>
               </span>
             </summary>
             <div class="content js-content">
-              <div class="content_inner">
+              <div class="content__inner">
                 <div class="content__box">
-                  <div>
+                  <div class="content__img">
                     <img src="img/items-1.png" alt="">
                   </div>
-                  <h3>B. SOAP BATH SET / N001</h3>
-                  <p>商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テ<br>キストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行<br>はいります商品の説明テキストが3行はいります。</p>
-                  <p>【セット内容】</p>
-                  <ul>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                  </ul>
-                  <a class="btn btn--arrow-right" href="#">オンラインストアを見る</a>
+                  <div class="content__text">
+                    <h3 class="content__text__title">B. SOAP BATH SET / N001</h3>
+                    <p class="content__text__description">商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります。</p>
+                    <ul class="content__text__list">
+                      <li>【セット内容】</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                    </ul>
+                    <div class="content__text__btn-box">
+                      <a class="content__text__btn" href="#">オンラインストアを見る</a>
+                    </div>
+                  </div>
                 </div>
                 <section class="content__voice">
-                  <h3>お客様の声</h3>
+                  <h3 class="content__voice__title">お客様の声</h3>
                   <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -292,36 +300,40 @@
       
           <details class="js-details">
             <summary class="js-summary">
-              <span class="summary_inner">
-                <div>
+              <span class="summary__inner">
+                <div class="summary__img">
                   <img src="img/items-2-s.png" alt="">
                 </div>
-                <div class="text">
-                  <h3>B. SOAP BOTTLE TYPE / N002</h3>
-                  <p>商品の簡単な説明テキストが1行はいります。</p>
-                  <p>販売名：販売時の正式名称がはいります</p>
+                <div class="summary__text">
+                  <h3 class="summary__text__title">B. SOAP BOTTLE TYPE / N002</h3>
+                  <p class="summary__text__description">商品の簡単な説明テキストが1行はいります。</p>
+                  <p class="summary__text__name">販売名：販売時の正式名称がはいります</p>
                 </div>
                 <span class="icon"></span>
               </span>
             </summary>
             <div class="content js-content">
-              <div class="content_inner">
+              <div class="content__inner">
                 <div class="content__box">
-                  <div>
+                  <div class="content__img">
                     <img src="img/items-2.png" alt="">
                   </div>
-                  <h3>B. SOAP BOTTLE TYPE / N002</h3>
-                  <p>商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テ<br>キストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行<br>はいります商品の説明テキストが3行はいります。</p>
-                  <p>【セット内容】</p>
-                  <ul>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                  </ul>
-                  <a class="btn btn--arrow-right" href="#">オンラインストアを見る</a>
+                  <div class="content__text">
+                    <h3 class="content__text__title">B. SOAP BOTTLE TYPE / N002</h3>
+                    <p class="content__text__description">商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります。</p>
+                    <ul class="content__text__list">
+                      <li>【セット内容】</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                    </ul>
+                    <div class="content__text__btn-box">
+                      <a class="content__text__btn" href="#">オンラインストアを見る</a>
+                    </div>
+                  </div>
                 </div>
                 <section class="content__voice">
-                  <h3>お客様の声</h3>
+                  <h3 class="content__voice__title">お客様の声</h3>
                   <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -352,36 +364,40 @@
       
           <details class="js-details">
             <summary class="js-summary">
-              <span class="summary_inner">
-                <div>
+              <span class="summary__inner">
+                <div class="summary__img">
                   <img src="img/items-3-s.png" alt="">
                 </div>
-                <div class="text">
-                  <h3>B. SOAP FOR GIFT / N003</h3>
-                  <p>商品の簡単な説明テキストが1行はいります。</p>
-                  <p>販売名：販売時の正式名称がはいります</p>
+                <div class="summary__text">
+                  <h3 class="summary__text__title">B. SOAP FOR GIFT / N003</h3>
+                  <p class="summary__text__description">商品の簡単な説明テキストが1行はいります。</p>
+                  <p class="summary__text__name">販売名：販売時の正式名称がはいります</p>
                 </div>
                 <span class="icon"></span>
               </span>
             </summary>
             <div class="content js-content">
-              <div class="content_inner">
+              <div class="content__inner">
                 <div class="content__box">
-                  <div>
+                  <div class="content__img">
                     <img src="img/items-3.png" alt="">
                   </div>
-                  <h3>B. SOAP FOR GIFT / N003</h3>
-                  <p>商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テ<br>キストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行<br>はいります商品の説明テキストが3行はいります。</p>
-                  <p>【セット内容】</p>
-                  <ul>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                    <li>セット内容テキスト</li>
-                  </ul>
-                  <a class="btn btn--arrow-right" href="#">オンラインストアを見る</a>
+                  <div class="content__text">
+                    <h3 class="content__text__title">B. SOAP FOR GIFT / N003</h3>
+                    <p class="content__text__description">商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります商品の説明テキストが3行はいります。</p>
+                    <ul class="content__text__list">
+                      <li>【セット内容】</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                      <li>セット内容テキスト</li>
+                    </ul>
+                    <div class="content__text__btn-box">
+                      <a class="content__text__btn" href="#">オンラインストアを見る</a>
+                    </div>
+                  </div>
                 </div>
                 <section class="content__voice">
-                  <h3>お客様の声</h3>
+                  <h3 class="content__voice__title">お客様の声</h3>
                   <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -414,19 +430,21 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__left">
-      <a href="index.html"><img src="img/logo.png" alt="B. SOAP"></a>
-      <p class="copyright">
-        <small>Copyright &copy; B SOAP. ALL RIGHTS RESERVED.</small>
-      </p>
-    </div>
-    <div class="footer__right">
-      <nav>
-        <ul>
-          <li><a href="#">company</a></li>
-          <li><a href="#">privacy policy</a></li>
-        </ul>
-      </nav>
+    <div class="footer__inner wrapper">
+      <div class="footer__left">
+        <a href="index.html"><img src="img/logo.png" alt="B. SOAP"></a>
+        <p class="copyright">
+          <small>copyright &copy; B SOAP. all rights reserved.</small>
+        </p>
+      </div>
+      <div class="footer__right">
+        <nav>
+          <ul>
+            <li><a href="#">company</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
