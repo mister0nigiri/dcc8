@@ -17,6 +17,10 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 40, 
 });
 
 
