@@ -24,6 +24,25 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+//Slider2
+const slider2 = new Swiper ('.slider2', {
+  loop: true,
+  speed: 1500,
+  effect: 'fade',
+  fadeEffect: {           
+    crossFade: true     
+  },                     
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

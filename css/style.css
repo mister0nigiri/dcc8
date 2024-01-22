@@ -65,12 +65,37 @@ li{
   width: 73%;
 }
 
-.header__swiper{
+.swiper__big__container{
   width: 32%;
   position: absolute !important;
   top: 100px;
   right: 0;
   z-index: 10;
+}
+
+.swiper__big__container .swiper-pagination{
+  bottom: -55px!important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px 16px 0px;
+}
+
+
+.swiper__big__container .swiper-pagination-bullet {
+  background-color: #FFC0CB;
+  opacity: 1; 
+  height: 35px;
+  width: 35px;
+}
+
+.swiper__big__container .swiper-pagination-bullet:last-of-type{
+  background-color: #707070;
+}
+
+.swiper__big__container .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .header__message{
