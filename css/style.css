@@ -571,18 +571,21 @@ li{
   transition: .3s;
 }
 
+.btn__link{
+  margin-left: 10px;
+}
+
 .variation__pick__btn:focus, .variation__pick__btn:hover{
   background-color: #fff;
   border-color: currentColor;
   color: #707070;
 }
 
-.variation__btn-box{
-  text-align: center;
-}
-
 .variation__btn{
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 600px;
   max-width: 100%;
   padding: 38px 10px;
@@ -592,6 +595,41 @@ li{
   font-size: 0.875rem;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
+  margin: 0 auto;
+  transition: .3s;
+}
+
+.variation__btn:focus, .variation__btn:hover{
+  transform: scale(1.1);
+}
+
+.round__btn {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  right: -186px;
+  border: 1px solid #121212; 
+  border-radius: 50%; 
+  background: #fff; 
+}
+ 
+.round__btn::before, .round__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px; 
+  height: 11px; 
+  background: #121212; 
+}
+ 
+.round__btn::before {
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+ 
+.round__btn::after {
+  transform: translate(-50%,-50%) rotate(90deg);
 }
 
 #mask{
@@ -812,6 +850,7 @@ details.is-opened .icon {
 .content {
   background-color: #fff;
   overflow: hidden;
+  position: relative;
 }
 
 .content__inner {
@@ -983,6 +1022,30 @@ details.is-opened .icon {
   transform: rotate(45deg);  
 }
 
+.close-button{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #121212;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.close-button::before { 
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: -18px;
+  width: 10px;    
+  height: 10px;  
+  border-top: 2px solid #000;     
+  border-right: 2px solid #000;  
+  transform: rotate(-45deg);   
+}
 
 /* FOOTER */
 

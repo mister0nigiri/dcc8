@@ -21,8 +21,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/2a488d4793.js" crossorigin="anonymous"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -43,7 +45,7 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-    <div class="header__message wrapper">
+    <div class="header__message wrapper fadein">
       <h2 class="header__message__title">透き通る肌を手に入れる</h2>
       <p class="header__message__text">B. SOAPの石けんは、お肌のことを考え<br>天然素材だけにこだわりながら<br>1個づつ丁寧に手作りで仕上げています。</p>
       <p class="header__message__text">自然の香りと潤いで、<br>あなたのお肌に透き通るような透明感を与えます。</p>
@@ -56,11 +58,11 @@
     </div>
     <section class="fluffy">
       <div class="fluffy__left">
-        <h2 class="fluffy__left__title">天然素材で</h2>
-        <h2 class="fluffy__left__title">潤いと透明感を</h2>
+        <h2 class="fluffy__left__title fadein">天然素材で</h2>
+        <h2 class="fluffy__left__title fadein">潤いと透明感を</h2>
         <div class="fluffy__left__img">
           <img src="img/item-1.png" alt="">
-          <div class="fluffy__left__circle first-circle">
+          <div class="fluffy__left__circle first-circle fadein">
             <span class="first-circle__text">
               <span class="first-circle__up">
                 <span class="bold-number">100</span>%
@@ -68,22 +70,22 @@
               <span class="first-circle__down">天然素材</span>
             </span>
           </div>
-          <div class="fluffy__left__circle second-circle">
+          <div class="fluffy__left__circle second-circle fadein">
             <span class="second-circle__up">手作業への</span>
             <span class="second-circle__down">こだわり</span>
           </div>
-          <div class="fluffy__left__circle third-circle">
+          <div class="fluffy__left__circle third-circle fadein">
             <span class="third-circle__up">潤いと</span>
             <span class="third-circle__down">透明感を</span>
           </div>
         </div>
       </div>
       <div class="fluffy__right">
-        <h2 class="fluffy__right__title">選べる</h2>
-        <h2 class="fluffy__right__title">カラーバリエーション</h2>
+        <h2 class="fluffy__right__title fadein">選べる</h2>
+        <h2 class="fluffy__right__title fadein">カラーバリエーション</h2>
         <div class="fluffy__right__img">
           <img src="img/item-2.png" alt="">
-          <div class="fluffy__right__circle fourth-circle">
+          <div class="fluffy__right__circle fourth-circle fadein">
             <span class="fourth-circle__text">
               <span class="fourth-circle__up">
                 <span class="bold-number">12/1</span>(木)
@@ -91,7 +93,7 @@
               <span class="fourth-circle__down">新発売</span>
             </span>
           </div>
-          <div class="fluffy__right__circle fifth-circle">
+          <div class="fluffy__right__circle fifth-circle fadein">
             <span class="fifth-circle__text">
               <span class="fifth-circle__up">
                 全<span class="bold-number">3</span>色で
@@ -99,7 +101,7 @@
               <span class="fifth-circle__down">展開</span>
             </span>
           </div>
-          <div class="fluffy__right__circle sixth-circle">
+          <div class="fluffy__right__circle sixth-circle fadein">
             <span class="sixth-circle__up">限定</span>
             <span class="sixth-circle__mid">キャンペーン</span>
             <span class="sixth-circle__down">実施中</span>
@@ -108,9 +110,9 @@
       </div>
     </section>
     <section class="variation">
-      <h2 class="section-title">color variations</h2>
-      <h2 class="section-title-ja">あなたはどのカラーが好き？</h2>
-      <div class="variation__box">
+      <h2 class="section-title fadein">color variations</h2>
+      <h2 class="section-title-ja fadein">あなたはどのカラーが好き？</h2>
+      <div class="variation__box fadein">
         <div class="variation__img">
           <img src="img/variations-white.png" alt="">
           <h3 class="variation__img__title">white</h3>
@@ -126,7 +128,7 @@
           <h3 class="variation__img__title">black</h3>
         </div>
       </div>
-      <div class="variation__pick wrapper">
+      <div class="variation__pick wrapper fadein">
         <div class="variation__pick__box">
           <div class="variation__pick__img">
             <img src="img/variations-item.png" alt="">
@@ -140,12 +142,12 @@
             <li>セット内容テキスト</li>
           </ul>
           <div class="variation__pick__btn-box">
-            <a class="btn variation__pick__btn" href="#">オンラインストアを見る</a>
+            <a class="btn variation__pick__btn" href="#">オンラインストアを見る<i class="fa-sharp fa-solid fa-arrow-up-right-from-square btn__link"></i></a>
           </div>
         </div>
       </div>
-      <div class="variation__btn-box">
-        <button id="open" class="variation__btn">取扱い店舗を見る</button>
+      <div class="variation__btn-box fadein">
+        <button id="open" class="variation__btn">取扱い店舗を見る<span class="round__btn"></span></button>
       </div>
       <section id="modal" class="modal">
         <div class="close-box">
@@ -228,9 +230,9 @@
     <section class="other">
       <div class="accordion wrapper">
         <div class="accordion__inner">
-          <h2 class="section-title">other items</h2>
-          <h2 class="section-title-ja">あなたにあったアイテムを見つけよう！</h2>
-          <details class="js-details">
+          <h2 class="section-title fadein">other items</h2>
+          <h2 class="section-title-ja fadein">あなたにあったアイテムを見つけよう！</h2>
+          <details class="js-details fadein">
             <summary class="js-summary">
               <span class="summary__inner">
                 <div class="summary__img">
@@ -300,10 +302,11 @@
                   </div>
                 </section>
               </div>
+              <button type="button" class="close-button">閉じる</button>
             </div>
           </details>
       
-          <details class="js-details">
+          <details class="js-details fadein">
             <summary class="js-summary">
               <span class="summary__inner">
                 <div class="summary__img">
@@ -373,10 +376,11 @@
                   </div>
                 </section>
               </div>
+              <button type="button" class="close-button">閉じる</button>
             </div>
           </details>
       
-          <details class="js-details">
+          <details class="js-details fadein">
             <summary class="js-summary">
               <span class="summary__inner">
                 <div class="summary__img">
@@ -446,6 +450,7 @@
                   </div>
                 </section>
               </div>
+              <button type="button" class="close-button">閉じる</button>
             </div>
           </details>
         </div>

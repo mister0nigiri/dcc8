@@ -57,6 +57,7 @@ const setUpAccordion = () => {
   details.forEach((element) => {
     const summary = element.querySelector(".js-summary");
     const content = element.querySelector(".js-content");
+    const closeButton = element.querySelector(".close-button");
 
     summary.addEventListener("click", (event) => {
       event.preventDefault();
@@ -82,6 +83,20 @@ const setUpAccordion = () => {
         };
       }
     });
+
+    if (closeButton) {
+      closeButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (element.open) {
+          const closingAnim = content.animate(closingAnimKeyframes(content), animTiming);
+          element.dataset.animStatus = RUNNING_VALUE;
+          closingAnim.onfinish = () => {
+            element.removeAttribute("open");
+            element.dataset.animStatus = ""; 
+          };
+        }
+      });
+    }
   });
 }
 
@@ -171,4 +186,36 @@ close.addEventListener('click', () => {
 
 mask.addEventListener('click', () => {
   close.click();
+});
+
+
+
+
+
+const animateFade = (entries, obs) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.animate(
+        {
+          opacity: [0, 1],
+          filter: ['blur(.4rem)', 'blur(0)'],
+          translate: ['0 4rem', 0],
+        },
+        {
+          duration: 2000,
+          easing: 'ease',
+          fill: 'forwards',
+        }
+      );
+      obs.unobserve(entry.target);
+    }
+  });
+};
+
+
+const fadeObserver = new IntersectionObserver(animateFade);
+
+const fadeElements = document.querySelectorAll('.fadein');
+fadeElements.forEach((fadeElement) => {
+  fadeObserver.observe(fadeElement);
 });
