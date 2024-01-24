@@ -200,6 +200,8 @@ const animateFade = (entries, obs) => {
           opacity: [0, 1],
           filter: ['blur(.4rem)', 'blur(0)'],
           translate: ['0 4rem', 0],
+          // translate: ['4rem 0', 0]右,
+          // translate: ['-4rem 0', '0']左,
         },
         {
           duration: 2000,
@@ -218,4 +220,67 @@ const fadeObserver = new IntersectionObserver(animateFade);
 const fadeElements = document.querySelectorAll('.fadein');
 fadeElements.forEach((fadeElement) => {
   fadeObserver.observe(fadeElement);
+});
+
+
+
+
+// 左からフェードイン
+const leftFade = (entries, obs) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.animate(
+        {
+          opacity: [0, 1],
+          filter: ['blur(.4rem)', 'blur(0)'],
+          // translate: ['4rem 0', 0]右,
+          translate: ['-4rem 0', '0'],
+        },
+        {
+          duration: 2000,
+          easing: 'ease',
+          fill: 'forwards',
+        }
+      );
+      obs.unobserve(entry.target);
+    }
+  });
+};
+
+
+const leftObserver = new IntersectionObserver(leftFade);
+
+const leftElements = document.querySelectorAll('.leftin');
+leftElements.forEach((leftElement) => {
+  leftObserver.observe(leftElement);
+});
+
+
+// 右からフェードイン
+const rightFade = (entries, obs) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      entry.target.animate(
+        {
+          opacity: [0, 1],
+          filter: ['blur(.4rem)', 'blur(0)'],
+          translate: ['4rem 0', 0],
+        },
+        {
+          duration: 2000,
+          easing: 'ease',
+          fill: 'forwards',
+        }
+      );
+      obs.unobserve(entry.target);
+    }
+  });
+};
+
+
+const rightObserver = new IntersectionObserver(rightFade);
+
+const rightElements = document.querySelectorAll('.rightin');
+rightElements.forEach((rightElement) => {
+  rightObserver.observe(rightElement);
 });
