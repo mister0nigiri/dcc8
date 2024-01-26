@@ -1275,13 +1275,14 @@ SP
   }
 
   .fluffy__right__circle{
-    padding-top: 30px;
+    padding-top: 0px;
     width: 136px;
     height: 136px;
     font-size: 1.25rem;
   }
 
   .fourth-circle{
+    padding-top: 40px;
     top: 10px;
     left: 76px;
   }
@@ -1300,6 +1301,7 @@ SP
   }
 
   .fifth-circle{
+    padding-top: 40px;
     top: 169px;
     right: -6px;
   }
