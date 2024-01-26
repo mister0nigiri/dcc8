@@ -5,6 +5,10 @@ html{
   scroll-behavior: smooth;
 }
 
+*{
+  outline: solid aqua;
+}
+
 body{
   color: #333;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
