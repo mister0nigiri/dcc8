@@ -150,7 +150,7 @@ li{
 .pagetop {
   cursor: pointer;
   position: fixed;
-  z-index: 9999;
+  z-index: 9997;
   right: 30px;
   bottom: 30px;
   display: flex;
@@ -1343,6 +1343,8 @@ SP
     /* VARIATION */
 
   .variation{
+    outline: solid aqua;
+    max-width: 100%;
     margin-bottom: 80px;
   }
 
