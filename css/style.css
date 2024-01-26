@@ -5,10 +5,6 @@ html{
   scroll-behavior: smooth;
 }
 
-*{
-  outline: solid aqua;
-}
-
 body{
   color: #333;
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
@@ -1440,13 +1436,35 @@ SP
     margin-bottom: 0px;
   }
 
-  .area__title{
-    margin-right: 40px;
-  }
 
-  .area__term{
-    margin-right: 60px;
+  
+  
+  .area{
+    /* padding-top: 40px;
+    border-bottom: 1px solid #707070;
+    display: flex; */
+    flex-direction: column;
   }
+  
+  .area:last-of-type{
+    border-bottom: none;
+  }
+  
+  .area__title{
+    font-size: 1rem;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .area__list{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  
+  .area__term{
+    margin-right: 0px;
+  } 
 
 
 
